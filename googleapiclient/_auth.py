@@ -29,13 +29,13 @@ try:
 except ImportError:  # pragma: NO COVER
     google_auth_httplib2 = None
 
-try:
-    import oauth2client
-    import oauth2client.client
+# try:
+#     import oauth2client
+#     import oauth2client.client
 
-    HAS_OAUTH2CLIENT = True
-except ImportError:  # pragma: NO COVER
-    HAS_OAUTH2CLIENT = False
+#     HAS_OAUTH2CLIENT = True
+# except ImportError:  # pragma: NO COVER
+HAS_OAUTH2CLIENT = False
 
 
 def credentials_from_file(filename, scopes=None, quota_project_id=None):
